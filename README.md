@@ -191,6 +191,7 @@ To view the full SDK Documentation, go to [Developer SDK Documentation](https://
 ## npm install from github
 ```bash
 npm install
+npm install --global gulp-cli
 gulp build
 ```
 commit the changes in 'lib' folder.

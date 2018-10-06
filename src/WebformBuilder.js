@@ -135,7 +135,7 @@ export default class WebformBuilder extends Webform {
       basic: {
         title: 'Basic Components',
         weight: 0,
-        default: true,
+        default: true
       },
       advanced: {
         title: 'Advanced',
@@ -148,6 +148,10 @@ export default class WebformBuilder extends Webform {
       data: {
         title: 'Data',
         weight: 30
+      },
+      custom: {
+        title: 'Custom',
+        weight: 40
       }
     };
   }

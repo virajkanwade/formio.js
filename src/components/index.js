@@ -38,6 +38,7 @@ import SurveyComponent from './survey/Survey';
 import WellComponent from './well/Well';
 import LocationComponent from './location/Location';
 import FileComponent from './file/File';
+import FileButtonComponent from './filebutton/FileButton';
 import TabsComponent from './tabs/Tabs';
 
 export default {
@@ -81,5 +82,6 @@ export default {
   survey: SurveyComponent,
   well: WellComponent,
   location: LocationComponent,
-  file: FileComponent
+  file: FileComponent,
+  filebutton: FileButtonComponent
 };
