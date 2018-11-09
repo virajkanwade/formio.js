@@ -1,6 +1,6 @@
 {
   "name": "formiojs",
-  "version": "3.7.1-npm-install",
+  "version": "3.7.1-filebutton",
   "description": "Common js library for client side interaction with <form.io>",
   "main": "index.js",
   "repository": {
