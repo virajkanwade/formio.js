@@ -95,6 +95,7 @@ export default class BaseComponent extends Component {
        * The input label provided to this component.
        */
       label: '',
+      labelNumber: '',
       labelPosition: 'top',
       labelWidth: 30,
       labelMargin: 3,
@@ -1115,6 +1116,13 @@ export default class BaseComponent extends Component {
     if (!isLabelHidden) {
       if (this.info.attr.id) {
         this.labelElement.setAttribute('for', this.info.attr.id);
+      }
+      if (this.component.labelNumber) {
+        // span is required to make sure translation will work independently on the label
+        this.spanNumber = this.ce('span');
+        this.spanNumber.appendChild(this.text(this.component.labelNumber));
+        this.labelElement.appendChild(this.spanNumber);
+        this.labelElement.appendChild(this.text(' '));
       }
       this.labelElement.appendChild(this.text(this.component.label));
       this.createTooltip(this.labelElement);
