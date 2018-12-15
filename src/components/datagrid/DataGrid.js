@@ -156,7 +156,9 @@ export default class DataGridComponent extends NestedComponent {
     const thead = this.ce('thead', null, this.ce('tr', null,
       [
         this.visibleComponents.map(comp => {
-          const th = this.ce('th');
+          const th = this.ce('th', {
+            class: comp.width
+          });
           if (comp.validate && comp.validate.required) {
             th.setAttribute('class', 'field-required');
           }
