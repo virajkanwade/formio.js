@@ -81,7 +81,8 @@ export default class TableComponent extends NestedComponent {
       const tr = this.ce('tr');
       _.each(row, (column, colIndex) => {
         const td = this.ce('td', {
-          id: `${this.id}-${rowIndex}-${colIndex}`
+          id: `${this.id}-${rowIndex}-${colIndex}`,
+          class: column.width
         });
         _.each(column.components, (comp) => {
           const component = this.addComponent(comp, td, data, null, null, state);
