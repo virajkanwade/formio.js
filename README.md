@@ -187,3 +187,11 @@ For more complete documentation over the JavaScript SDK, please take a look at t
 
 ## Full Developer API Documentation
 To view the full SDK Documentation, go to [Developer SDK Documentation](https://formio.github.io/formio.js/docs/)
+
+## npm install from github
+```bash
+npm install
+npm install --global gulp-cli
+gulp build
+```
+commit the changes in 'lib' folder.
