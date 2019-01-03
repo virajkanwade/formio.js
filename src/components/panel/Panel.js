@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import NestedComponent from '../nested/NestedComponent';
 
 export default class PanelComponent extends NestedComponent {
@@ -6,6 +7,7 @@ export default class PanelComponent extends NestedComponent {
       label: 'Panel',
       type: 'panel',
       key: 'panel',
+      icons: [{ url: '', title: '' }],
       title: '',
       theme: 'default',
       breadcrumb: 'default',
@@ -78,7 +80,7 @@ export default class PanelComponent extends NestedComponent {
         class: `card-header bg-${this.component.theme} panel-heading`
       });
       this.panelTitle = this.ce('h4', {
-        class: 'mb-0 card-title panel-title'
+        class: 'mb-0 card-title panel-title float-left'
       });
       if (this.component.collapsible) {
         this.collapseIcon = this.getCollapseIcon();
@@ -89,6 +91,26 @@ export default class PanelComponent extends NestedComponent {
       this.panelTitle.appendChild(this.text(this.component.title));
       this.createTooltip(this.panelTitle);
       heading.appendChild(this.panelTitle);
+
+      this.iconsHolder = this.ce('div', {
+        class: 'panel-heading-icons float-right'
+      });
+
+      _.each(this.component.icons, (icon) => {
+        this.iconsHolder.appendChild(
+          this.ce('div', {
+              class: 'panel-heading-icon float-left'
+            },
+            this.ce('img', {
+              src: icon.url,
+              alt: icon.title,
+              title: icon.title,
+            })
+          )
+        );
+      });
+      heading.appendChild(this.iconsHolder);
+
       this.setCollapseHeader(heading);
       this.element.appendChild(heading);
     }

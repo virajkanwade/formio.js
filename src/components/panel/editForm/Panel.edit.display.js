@@ -23,6 +23,27 @@ export default [
     tooltip: 'Adds a tooltip to the side of this field.'
   },
   {
+    weight: 25,
+    type: 'datagrid',
+    input: true,
+    label: 'Icons',
+    key: 'icons',
+    components: [
+      {
+        label: 'URL',
+        key: 'url',
+        input: true,
+        type: 'textfield'
+      },
+      {
+        label: 'title',
+        key: 'title',
+        input: true,
+        type: 'textfield'
+      }
+    ]
+  },
+  {
     weight: 30,
     type: 'select',
     input: true,
