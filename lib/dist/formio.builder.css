@@ -672,15 +672,6 @@ body.formio-dialog-open {
 .formio-component-dateTime .form-control[type="datetime-local"] ~ .input-group-addon {
   width: auto; }
 
-.panel-heading h4 {
-  float: left; }
-
-.panel-heading .panel-heading-icons {
-  float: right; }
-
-.panel-heading .panel-heading-icons .panel-heading-icon {
-  float: left; }
-
 .formbuilder {
   position: relative; }
 
@@ -777,12 +768,3 @@ body.formio-dialog-open {
 
 .panel-body .drag-and-drop-alert {
   margin-bottom: 0; }
-
-.panel-heading h4 {
-  float: left; }
-
-.panel-heading .panel-heading-icons {
-  float: right; }
-
-.panel-heading .panel-heading-icons .panel-heading-icon {
-  float: left; }

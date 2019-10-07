@@ -648,12 +648,3 @@ body.formio-dialog-open {
 .formio-component-datetime .form-control[type="datetime-local"] ~ .input-group-addon,
 .formio-component-dateTime .form-control[type="datetime-local"] ~ .input-group-addon {
   width: auto; }
-
-.panel-heading h4 {
-  float: left; }
-
-.panel-heading .panel-heading-icons {
-  float: right; }
-
-.panel-heading .panel-heading-icons .panel-heading-icon {
-  float: left; }
